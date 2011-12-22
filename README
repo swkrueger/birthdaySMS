@@ -1,0 +1,24 @@
+===========
+birthdaySMS
+===========
+
+This is a VERY simple, quick and dirty PHP script to automatically send birthday
+ SMS's to people (in a school / club / ...) through WinSMS.co.za. It is easy to
+ modify the code to use the APIs of other bulk SMS providers. This script can
+ even be used if you are very lazy and often forget to send birthday SMS's to
+ your friends.
+
+Simply create a database with the fields uid, surname, firstnames, birthday,
+ cellno and language. Then edit config.php (descriptions in file). Test it by
+ running "php cron.php". If everything seems safe, comment out the lines
+ containing "$dryrun" and "$debug" in config.php.
+
+Setup a cron job to run cron.php once every day, eg. at 9 AM. You could
+ theoretically set it to anything, but the learners / club members / ...
+ won't be very happy to get a SMS at 1 AM!
+
+<disclaimer>
+USE AT YOUR OWN RISK! YOU HAVE BEEN WARNED!
+IF YOU LOSE MONEY BY ACCIDENTLY SENDING 1000 SMS'S, THAT ISN'T MY FAULT!
+</disclaimer>
+
